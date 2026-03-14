@@ -99,6 +99,13 @@ Once innoextract is installed, download the game from GOG. The downloaded file s
 
 Assuming you used the filepath above, your ``.esm`` files will be located in ``~/Documents/Games/Morrowind/app/Data Files/``.
 
+There may be special characters like brackets in the filenames. This will cause innoextract to fail. Delete the brackets from the filenames of both the .exe and .bin files, leaving everything else the same.  You need the .exe and .bin in the same folder for the extract to work properly.
+
+.. code:: console
+
+    setup_the_elder_scrolls_iii_morrowind_goty_1.6.0.1820_gog_0.1_(77582)-1.bin --> setup_the_elder_scrolls_iii_morrowind_goty_1.6.0.1820_gog_0.1_77582-1.bin
+    setup_the_elder_scrolls_iii_morrowind_goty_1.6.0.1820_gog_0.1_(77582).exe --> setup_the_elder_scrolls_iii_morrowind_goty_1.6.0.1820_gog_0.1_77582.exe
+
 You can now run the OpenMW launcher, and from there run the installation wizard. Point it to your ``Morrowind.esm`` in the folder you extracted it to, and follow the instructions.
 
 ---------------------
